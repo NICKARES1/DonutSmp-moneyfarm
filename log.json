@@ -1,16 +1,604 @@
 [
   {
-    "name": "repeater",
-    "auction_price_per_stack": 3125,
-    "highest_order_per_stack": null,
-    "multiplier": null,
-    "profit_per_stack": null
+    "name": "ghast_tear",
+    "auction_price_per_stack": 15990,
+    "highest_order_per_stack": 15,
+    "multiplier": 1066.0,
+    "profit_per_stack": 1022400,
+    "buy_all": true,
+    "Profit_if_buy_all": 26582400
+  },
+  {
+    "name": "daylight_detector",
+    "auction_price_per_stack": 15625,
+    "highest_order_per_stack": 2000,
+    "multiplier": 7.8125,
+    "profit_per_stack": 872000,
+    "buy_all": false,
+    "Profit_if_buy_all": 22672000
+  },
+  {
+    "name": "mushroom_stem",
+    "auction_price_per_stack": 11719,
+    "highest_order_per_stack": 1500,
+    "multiplier": 7.812666666666667,
+    "profit_per_stack": 654016,
+    "buy_all": false,
+    "Profit_if_buy_all": 17004416
+  },
+  {
+    "name": "target",
+    "auction_price_per_stack": 5859,
+    "highest_order_per_stack": 1100,
+    "multiplier": 5.326363636363636,
+    "profit_per_stack": 304576,
+    "buy_all": false,
+    "Profit_if_buy_all": 7918976
+  },
+  {
+    "name": "honey_bottle",
+    "auction_price_per_stack": 5000,
+    "highest_order_per_stack": 1520,
+    "multiplier": 3.289473684210526,
+    "profit_per_stack": 222720,
+    "buy_all": false,
+    "Profit_if_buy_all": 5790720
+  },
+  {
+    "name": "blue_ice",
+    "auction_price_per_stack": 4219,
+    "highest_order_per_stack": 1540,
+    "multiplier": 2.7396103896103896,
+    "profit_per_stack": 171456,
+    "buy_all": false,
+    "Profit_if_buy_all": 4457856
+  },
+  {
+    "name": "prismarine_shard",
+    "auction_price_per_stack": 1538,
+    "highest_order_per_stack": 51,
+    "multiplier": 30.15686274509804,
+    "profit_per_stack": 95168,
+    "buy_all": false,
+    "Profit_if_buy_all": 2474368
+  },
+  {
+    "name": "dropper",
+    "auction_price_per_stack": 1875,
+    "highest_order_per_stack": 560,
+    "multiplier": 3.3482142857142856,
+    "profit_per_stack": 84160,
+    "buy_all": false,
+    "Profit_if_buy_all": 2188160
+  },
+  {
+    "name": "ice",
+    "auction_price_per_stack": 1562,
+    "highest_order_per_stack": 400,
+    "multiplier": 3.905,
+    "profit_per_stack": 74368,
+    "buy_all": false,
+    "Profit_if_buy_all": 1933568
+  },
+  {
+    "name": "red_mushroom_block",
+    "auction_price_per_stack": 1094,
+    "highest_order_per_stack": 10,
+    "multiplier": 109.4,
+    "profit_per_stack": 69376,
+    "buy_all": false,
+    "Profit_if_buy_all": 1803776
+  },
+  {
+    "name": "honeycomb",
+    "auction_price_per_stack": 1547,
+    "highest_order_per_stack": 500,
+    "multiplier": 3.094,
+    "profit_per_stack": 67008,
+    "buy_all": false,
+    "Profit_if_buy_all": 1742208
+  },
+  {
+    "name": "magma_cream",
+    "auction_price_per_stack": 1047,
+    "highest_order_per_stack": 30,
+    "multiplier": 34.9,
+    "profit_per_stack": 65088,
+    "buy_all": false,
+    "Profit_if_buy_all": 1692288
   },
   {
     "name": "comparator",
-    "auction_price_per_stack": 3828,
-    "highest_order_per_stack": null,
-    "multiplier": null,
-    "profit_per_stack": null
+    "auction_price_per_stack": 2812,
+    "highest_order_per_stack": 1800,
+    "multiplier": 1.5622222222222222,
+    "profit_per_stack": 64768,
+    "buy_all": false,
+    "Profit_if_buy_all": 1683968
+  },
+  {
+    "name": "spider_eye",
+    "auction_price_per_stack": 1010,
+    "highest_order_per_stack": 12,
+    "multiplier": 84.16666666666667,
+    "profit_per_stack": 63872,
+    "buy_all": false,
+    "Profit_if_buy_all": 1660672
+  },
+  {
+    "name": "slime_ball",
+    "auction_price_per_stack": 1094,
+    "highest_order_per_stack": 370,
+    "multiplier": 2.9567567567567568,
+    "profit_per_stack": 46336,
+    "buy_all": false,
+    "Profit_if_buy_all": 1204736
+  },
+  {
+    "name": "purpur_block",
+    "auction_price_per_stack": 781,
+    "highest_order_per_stack": 60,
+    "multiplier": 13.016666666666667,
+    "profit_per_stack": 46144,
+    "buy_all": false,
+    "Profit_if_buy_all": 1199744
+  },
+  {
+    "name": "scaffolding",
+    "auction_price_per_stack": 703,
+    "highest_order_per_stack": 40,
+    "multiplier": 17.575,
+    "profit_per_stack": 42432,
+    "buy_all": false,
+    "Profit_if_buy_all": 1103232
+  },
+  {
+    "name": "blackstone",
+    "auction_price_per_stack": 1094,
+    "highest_order_per_stack": 450,
+    "multiplier": 2.431111111111111,
+    "profit_per_stack": 41216,
+    "buy_all": false,
+    "Profit_if_buy_all": 1071616
+  },
+  {
+    "name": "end_rod",
+    "auction_price_per_stack": 623,
+    "highest_order_per_stack": 10,
+    "multiplier": 62.3,
+    "profit_per_stack": 39232,
+    "buy_all": false,
+    "Profit_if_buy_all": 1020032
+  },
+  {
+    "name": "lever",
+    "auction_price_per_stack": 541,
+    "highest_order_per_stack": 90,
+    "multiplier": 6.011111111111111,
+    "profit_per_stack": 28864,
+    "buy_all": false,
+    "Profit_if_buy_all": 750464
+  },
+  {
+    "name": "string",
+    "auction_price_per_stack": 469,
+    "highest_order_per_stack": 64,
+    "multiplier": 7.328125,
+    "profit_per_stack": 25920,
+    "buy_all": false,
+    "Profit_if_buy_all": 673920
+  },
+  {
+    "name": "tnt",
+    "auction_price_per_stack": 2188,
+    "highest_order_per_stack": 1800,
+    "multiplier": 1.2155555555555555,
+    "profit_per_stack": 24832,
+    "buy_all": false,
+    "Profit_if_buy_all": 645632
+  },
+  {
+    "name": "kelp",
+    "auction_price_per_stack": 391,
+    "highest_order_per_stack": 44,
+    "multiplier": 8.886363636363637,
+    "profit_per_stack": 22208,
+    "buy_all": false,
+    "Profit_if_buy_all": 577408
+  },
+  {
+    "name": "glass",
+    "auction_price_per_stack": 547,
+    "highest_order_per_stack": 208,
+    "multiplier": 2.6298076923076925,
+    "profit_per_stack": 21696,
+    "buy_all": false,
+    "Profit_if_buy_all": 564096
+  },
+  {
+    "name": "gunpowder",
+    "auction_price_per_stack": 406,
+    "highest_order_per_stack": 121,
+    "multiplier": 3.355371900826446,
+    "profit_per_stack": 18240,
+    "Profit_if_buy_all": 474240
+  },
+  {
+    "name": "glowstone_dust",
+    "auction_price_per_stack": 250,
+    "highest_order_per_stack": 14,
+    "multiplier": 17.857142857142858,
+    "profit_per_stack": 15104,
+    "buy_all": false,
+    "Profit_if_buy_all": 392704
+  },
+  {
+    "name": "hopper",
+    "auction_price_per_stack": 1515,
+    "highest_order_per_stack": 1300,
+    "multiplier": 1.1653846153846155,
+    "profit_per_stack": 13760,
+    "buy_all": false,
+    "Profit_if_buy_all": 357760
+  },
+  {
+    "name": "packed_ice",
+    "auction_price_per_stack": 391,
+    "highest_order_per_stack": 201,
+    "multiplier": 1.945273631840796,
+    "profit_per_stack": 12160,
+    "buy_all": false,
+    "Profit_if_buy_all": 316160
+  },
+  {
+    "name": "bone",
+    "auction_price_per_stack": 305,
+    "highest_order_per_stack": 130,
+    "multiplier": 2.3461538461538463,
+    "profit_per_stack": 11200,
+    "buy_all": false,
+    "Profit_if_buy_all": 291200
+  },
+  {
+    "name": "cobblestone",
+    "auction_price_per_stack": 227,
+    "highest_order_per_stack": 56,
+    "multiplier": 4.053571428571429,
+    "profit_per_stack": 10944,
+    "buy_all": false,
+    "Profit_if_buy_all": 284544
+  },
+  {
+    "name": "dirt",
+    "auction_price_per_stack": 219,
+    "highest_order_per_stack": 53,
+    "multiplier": 4.132075471698113,
+    "profit_per_stack": 10624,
+    "buy_all": false,
+    "Profit_if_buy_all": 276224
+  },
+  {
+    "name": "granite",
+    "auction_price_per_stack": 156,
+    "highest_order_per_stack": 10,
+    "multiplier": 15.6,
+    "profit_per_stack": 9344,
+    "buy_all": false,
+    "Profit_if_buy_all": 242944
+  },
+  {
+    "name": "ender_pearl",
+    "auction_price_per_stack": 219,
+    "highest_order_per_stack": 76,
+    "multiplier": 2.8815789473684212,
+    "profit_per_stack": 9152,
+    "buy_all": false,
+    "Profit_if_buy_all": 237952
+  },
+  {
+    "name": "firework_rocket",
+    "auction_price_per_stack": 234,
+    "highest_order_per_stack": 111,
+    "multiplier": 2.108108108108108,
+    "profit_per_stack": 7872,
+    "buy_all": false,
+    "Profit_if_buy_all": 204672
+  },
+  {
+    "name": "nether_wart",
+    "auction_price_per_stack": 156,
+    "highest_order_per_stack": 50,
+    "multiplier": 3.12,
+    "profit_per_stack": 6784,
+    "buy_all": false,
+    "Profit_if_buy_all": 176384
+  },
+  {
+    "name": "sand",
+    "auction_price_per_stack": 266,
+    "highest_order_per_stack": 162,
+    "multiplier": 1.6419753086419753,
+    "profit_per_stack": 6656,
+    "buy_all": false,
+    "Profit_if_buy_all": 173056
+  },
+  {
+    "name": "rotten_flesh",
+    "auction_price_per_stack": 100,
+    "highest_order_per_stack": 7,
+    "multiplier": 14.285714285714286,
+    "profit_per_stack": 5952,
+    "buy_all": false,
+    "Profit_if_buy_all": 154752
+  },
+  {
+    "name": "andesite",
+    "auction_price_per_stack": 70,
+    "highest_order_per_stack": 1,
+    "multiplier": 70.0,
+    "profit_per_stack": 4416,
+    "buy_all": false,
+    "Profit_if_buy_all": 114816
+  },
+  {
+    "name": "redstone",
+    "auction_price_per_stack": 234,
+    "highest_order_per_stack": 180,
+    "multiplier": 1.3,
+    "profit_per_stack": 3456,
+    "buy_all": false,
+    "Profit_if_buy_all": 89856
+  },
+  {
+    "name": "sugar_cane",
+    "auction_price_per_stack": 156,
+    "highest_order_per_stack": 102,
+    "multiplier": 1.5294117647058822,
+    "profit_per_stack": 3456,
+    "buy_all": false,
+    "Profit_if_buy_all": 89856
+  },
+  {
+    "name": "netherrack",
+    "auction_price_per_stack": 62,
+    "highest_order_per_stack": 16,
+    "multiplier": 3.875,
+    "profit_per_stack": 2944,
+    "buy_all": false,
+    "Profit_if_buy_all": 76544
+  },
+  {
+    "name": "end_stone",
+    "auction_price_per_stack": 47,
+    "highest_order_per_stack": 6,
+    "multiplier": 7.833333333333333,
+    "profit_per_stack": 2624,
+    "buy_all": false,
+    "Profit_if_buy_all": 68224
+  },
+  {
+    "name": "basalt",
+    "auction_price_per_stack": 78,
+    "highest_order_per_stack": 51,
+    "multiplier": 1.5294117647058822,
+    "profit_per_stack": 1728,
+    "buy_all": false,
+    "Profit_if_buy_all": 44928
+  },
+  {
+    "name": "gravel",
+    "auction_price_per_stack": 430,
+    "highest_order_per_stack": 405,
+    "multiplier": 1.0617283950617284,
+    "profit_per_stack": 1600,
+    "buy_all": false,
+    "Profit_if_buy_all": 41600
+  },
+  {
+    "name": "bamboo",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": 12,
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "chorus_fruit",
+    "auction_price_per_stack": 45,
+    "highest_order_per_stack": 45,
+    "multiplier": 1.0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "iron_ingot",
+    "auction_price_per_stack": 312,
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "gold_ingot",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": 1460,
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "diamond",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "emerald",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "lapis_lazuli",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "coal",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "quartz",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": 41,
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "blaze_rod",
+    "auction_price_per_stack": 234,
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "prismarine_crystal",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "terracotta",
+    "auction_price_per_stack": 1875,
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "concrete_powder",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "wool",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "carpet",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "diorite",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": "not_found",
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "brown_mushroom_block",
+    "auction_price_per_stack": "not_found",
+    "highest_order_per_stack": 98,
+    "multiplier": 0,
+    "profit_per_stack": 0,
+    "buy_all": false,
+    "Profit_if_buy_all": 0
+  },
+  {
+    "name": "repeater",
+    "auction_price_per_stack": 2063,
+    "highest_order_per_stack": 2100,
+    "multiplier": 0.9823809523809524,
+    "profit_per_stack": -2368,
+    "buy_all": false,
+    "Profit_if_buy_all": -61568
+  },
+  {
+    "name": "oak_log",
+    "auction_price_per_stack": 203,
+    "highest_order_per_stack": 241,
+    "multiplier": 0.8423236514522822,
+    "profit_per_stack": -2432,
+    "buy_all": false,
+    "Profit_if_buy_all": -63232
+  },
+  {
+    "name": "piston",
+    "auction_price_per_stack": 1190,
+    "highest_order_per_stack": 1300,
+    "multiplier": 0.9153846153846154,
+    "profit_per_stack": -7040,
+    "buy_all": false,
+    "Profit_if_buy_all": -183040
+  },
+  {
+    "name": "observer",
+    "auction_price_per_stack": 962,
+    "highest_order_per_stack": 1310,
+    "multiplier": 0.7343511450381679,
+    "profit_per_stack": -22272,
+    "buy_all": false,
+    "Profit_if_buy_all": -579072
+  },
+  {
+    "name": "sea_lantern",
+    "auction_price_per_stack": 39216,
+    "highest_order_per_stack": 41010,
+    "multiplier": 0.9562545720555962,
+    "profit_per_stack": -114816,
+    "buy_all": false,
+    "Profit_if_buy_all": -2985216
+  },
+  {
+    "name": "dispenser",
+    "auction_price_per_stack": 4688,
+    "highest_order_per_stack": 10000,
+    "multiplier": 0.4688,
+    "profit_per_stack": -339968,
+    "buy_all": false,
+    "Profit_if_buy_all": -8839168
   }
 ]
