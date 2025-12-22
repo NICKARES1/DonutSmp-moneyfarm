@@ -10,84 +10,123 @@ from minescript_plus import Inventory, Key,Screen
 
 
 
+
 tradable_items = [
-    # Redstone/Mechanik (64er Stacks)
-    {"name": "repeater", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "comparator", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "redstone", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "observer", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "piston", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "dispenser", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "dropper", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "hopper", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "lever", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "target", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "daylight_detector", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "tnt", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-
-    # Farm- und Massenwaren (64er Stacks)
-    {"name": "sugar_cane", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "bamboo", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "bone", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "kelp", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "oak_log", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "cobblestone", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "glass", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "sand", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "gravel", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "string", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "gunpowder", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": 0},
-    {"name": "rotten_flesh", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "spider_eye", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "firework_rocket", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "packed_ice", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "blue_ice", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "slime_ball", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "honey_bottle", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "honeycomb", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "nether_wart", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "magma_cream", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "glowstone_dust", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "chorus_fruit", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-
-    # Erze und Währungen (64er Stacks)
-    {"name": "iron_ingot", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "gold_ingot", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "diamond", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "emerald", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "lapis_lazuli", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "coal", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "quartz", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-
-    # End-Game Materialien (64er Stacks)
-    {"name": "blaze_rod", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "ghast_tear", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "ender_pearl", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "end_stone", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "purpur_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "end_rod", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "prismarine_shard", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "prismarine_crystal", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "sea_lantern", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-
-    # Spezifische Blöcke und Drops (64er Stacks)
-    {"name": "terracotta", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "concrete_powder", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0}, # Beliebt für Bauprojekte
-    {"name": "wool", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0}, # Kann lukrativ sein (siehe Suchergebnisse)
-    {"name": "carpet", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "diorite", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "andesite", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "granite", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "netherrack", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "basalt", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "blackstone", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "mushroom_stem", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "brown_mushroom_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "red_mushroom_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "dirt", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "ice", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
-    {"name": "scaffolding", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0},
+  {"name": "elytra", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "dragon_head", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "zombie_head", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "skeleton_skull", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "creeper_head", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "wither_skeleton_skull", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "piglin_head", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "netherite_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["netherite_ingot", "netherite_ingot", "netherite_ingot", "netherite_ingot", "netherite_ingot", "netherite_ingot", "netherite_ingot", "netherite_ingot", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "netherite_ingot", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["netherite_scrap", "netherite_scrap", "netherite_scrap", "netherite_scrap", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot"], "crafting multiplier": None},
+  {"name": "netherite_scrap", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "ancient_debris", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "netherite_helmet", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond_helmet", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "netherite_chestplate", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond_chestplate", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "netherite_leggings", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond_leggings", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "netherite_boots", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond_boots", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "netherite_sword", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond_sword", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "netherite_pickaxe", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond_pickaxe", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "netherite_axe", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond_axe", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "netherite_shovel", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond_shovel", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "netherite_hoe", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond_hoe", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "enchanted_golden_apple", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "mace", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["heavy_core", "breeze_rod"], "crafting multiplier": None},
+  {"name": "heavy_core", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "enchanted_book_wind_burst", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "heart_of_the_sea", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "trident", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "trial_key", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "ominous_trial_key", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "nautilus_shell", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "lodestone", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["chiseled_stone_bricks", "chiseled_stone_bricks", "chiseled_stone_bricks", "chiseled_stone_bricks", "chiseled_stone_bricks", "chiseled_stone_bricks", "chiseled_stone_bricks", "chiseled_stone_bricks", "netherite_ingot"], "crafting multiplier": None},
+  {"name": "beacon", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["glass", "glass", "glass", "glass", "glass", "nether_star", "obsidian", "obsidian", "obsidian"], "crafting multiplier": None},
+  {"name": "nether_star", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "deepslate_emerald_ore", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "gilded_blackstone", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "phantom_membrane", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "conduit", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["nautilus_shell", "nautilus_shell", "nautilus_shell", "nautilus_shell", "nautilus_shell", "nautilus_shell", "nautilus_shell", "nautilus_shell", "heart_of_the_sea"], "crafting multiplier": None},
+  {"name": "tall_grass", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "sponge", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "wet_sponge", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "suspicious_sand", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "suspicious_gravel", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "turtle_scute", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "diamond_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond"], "crafting multiplier": None},
+  {"name": "diamond", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "lectern", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["oak_slab", "oak_slab", "oak_slab", "bookshelf", "oak_slab"], "crafting multiplier": None},
+  {"name": "emerald", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "emerald_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["emerald", "emerald", "emerald", "emerald", "emerald", "emerald", "emerald", "emerald", "emerald"], "crafting multiplier": None},
+  {"name": "pufferfish", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "glow_item_frame", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["item_frame", "glow_ink_sac"], "crafting multiplier": None},
+  {"name": "sea_lantern", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["prismarine_shard", "prismarine_shard", "prismarine_shard", "prismarine_shard", "prismarine_crystals", "prismarine_crystals", "prismarine_crystals", "prismarine_crystals", "prismarine_crystals"], "crafting multiplier": None},
+  {"name": "echo_shard", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "pearlescent_froglight", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "verdant_froglight", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "ochre_froglight", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "bee_nest", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "bookshelf", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["oak_planks", "oak_planks", "oak_planks", "book", "book", "book", "oak_planks", "oak_planks", "oak_planks"], "crafting multiplier": None},
+  {"name": "gold_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot"], "crafting multiplier": None},
+  {"name": "gold_ingot", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "raw_gold_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["raw_gold", "raw_gold", "raw_gold", "raw_gold", "raw_gold", "raw_gold", "raw_gold", "raw_gold", "raw_gold"], "crafting multiplier": None},
+  {"name": "map", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["paper", "paper", "paper", "paper", "compass", "paper", "paper", "paper", "paper"], "crafting multiplier": None},
+  {"name": "amethyst_cluster", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "recovery_compass", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["echo_shard", "echo_shard", "echo_shard", "echo_shard", "compass", "echo_shard", "echo_shard", "echo_shard", "echo_shard"], "crafting multiplier": None},
+  {"name": "honey_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["honey_bottle", "honey_bottle", "honey_bottle", "honey_bottle"], "crafting multiplier": None},
+  {"name": "enchanting_table", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["book", "diamond", "diamond", "obsidian", "obsidian", "obsidian", "obsidian"], "crafting multiplier": None},
+  {"name": "rabbit_foot", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "leather", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "target", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["redstone", "redstone", "redstone", "redstone", "hay_block", "redstone", "redstone", "redstone", "redstone"], "crafting multiplier": None},
+  {"name": "breeze_rod", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "deepslate_coal_ore", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "deepslate_iron_ore", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "deepslate_copper_ore", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "deepslate_gold_ore", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "deepslate_redstone_ore", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "deepslate_lapis_ore", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "deepslate_diamond_ore", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "anvil", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["iron_block", "iron_block", "iron_block", "iron_ingot", "iron_ingot", "iron_ingot", "iron_ingot"], "crafting multiplier": None},
+  {"name": "coal_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["coal", "coal", "coal", "coal", "coal", "coal", "coal", "coal", "coal"], "crafting multiplier": None},
+  {"name": "book", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["paper", "paper", "paper", "leather"], "crafting multiplier": None},
+  {"name": "large_amethyst_bud", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "medium_amethyst_bud", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "small_amethyst_bud", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "sculk_shrieker", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "glow_ink_sac", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "hay_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["wheat", "wheat", "wheat", "wheat", "wheat", "wheat", "wheat", "wheat", "wheat"], "crafting multiplier": None},
+  {"name": "shroomlight", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "ink_sac", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "crafter", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["iron_ingot", "iron_ingot", "iron_ingot", "iron_ingot", "crafting_table", "iron_ingot", "redstone", "dropper", "redstone"], "crafting multiplier": None},
+  {"name": "nether_gold_ore", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "redstone_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["redstone", "redstone", "redstone", "redstone", "redstone", "redstone", "redstone", "redstone", "redstone"], "crafting multiplier": None},
+  {"name": "dispenser", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["cobblestone", "cobblestone", "cobblestone", "cobblestone", "bow", "cobblestone", "cobblestone", "redstone", "cobblestone"], "crafting multiplier": None},
+  {"name": "dropper", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["cobblestone", "cobblestone", "cobblestone", "cobblestone", "cobblestone", "cobblestone", "redstone", "cobblestone"], "crafting multiplier": None},
+  {"name": "repeater", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["redstone_torch", "redstone", "redstone_torch", "stone", "stone", "stone"], "crafting multiplier": None},
+  {"name": "comparator", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["redstone_torch", "nether_quartz", "redstone_torch", "stone", "stone", "stone"], "crafting multiplier": None},
+  {"name": "item_frame", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["stick", "stick", "stick", "stick", "leather", "stick", "stick", "stick", "stick"], "crafting multiplier": None},
+  {"name": "slime_block", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["slime_ball", "slime_ball", "slime_ball", "slime_ball", "slime_ball", "slime_ball", "slime_ball", "slime_ball", "slime_ball"], "crafting multiplier": None},
+  {"name": "lime_concrete", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "small_dripleaf", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "dark_prismarine", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": ["prismarine_shard", "prismarine_shard", "prismarine_shard", "prismarine_shard", "ink_sac", "prismarine_shard", "prismarine_shard", "prismarine_shard", "prismarine_shard"], "crafting multiplier": None},
+  # Music Discs (Beispiele)
+  {"name": "music_disc_5", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "music_disc_pigstep", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "music_disc_otherside", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "music_disc_relic", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "music_disc_creator", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "music_disc_precipice", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  # Pottery Sherds (Beispiele)
+  {"name": "angler_pottery_sherd", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "archer_pottery_sherd", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "arms_up_pottery_sherd", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "danger_pottery_sherd", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "flow_pottery_sherd", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None},
+  {"name": "gush_pottery_sherd", "auction_price_per_stack": None, "highest_order_per_stack": None, "multiplier": None, "profit_per_stack": None, "buy_all": False, "Profit_if_buy_all": 0, "crafting": [], "crafting multiplier": None}
 ]
+
+
 possible_sell_items = 26
 money = 243460
 
@@ -112,6 +151,33 @@ def get_number(num):
         return float(num[:-1])*1000
     return float(num)    
     
+def gettotalcraftmoney(items_list):
+    if "Items to craft not found" == items_list: return "Items to craft not found"
+    price = 0
+    for element in items_list:
+        found = False
+        for item in tradable_items:
+            if element == item["name"]:
+                found = True
+                if item["crafting"]:
+                    for obj in item["crafting"]:
+                        sub_price = gettotalcraftmoney([obj])
+                        if isinstance(sub_price, (int, float)):
+                            price += sub_price
+                        else:
+                            if isinstance(item["highest_order_per_stack"], (int, float)):
+                                price += item["highest_order_per_stack"]
+                            else:
+                                return "Items to craft not found"
+
+                else:
+                    if isinstance(item["highest_order_per_stack"], (int, float)):
+                        price += item["highest_order_per_stack"]
+                    else:
+                        return "Items to craft not found"
+        if  not found:
+            return "Items to craft not found"
+    return price
 
 
 def get_auction_cheapest_stack(itemname):
@@ -122,7 +188,7 @@ def get_auction_cheapest_stack(itemname):
     sorted_items = []
     another_page = True
     page = 0
-    while another_page and page <15:
+    while another_page and page <25:
         start = time.time()
         Screen.wait_screen("",5000)
         if(time.time()-start<0.3):
@@ -239,11 +305,31 @@ try:
             element["multiplier"] = 0
             element["profit_per_stack"] = 0
             element["Profit_if_buy_all"] = 0
+        
+        with open("C:/Users/nicks/AppData/Roaming/ModrinthApp/profiles/Nick 1.0.0.mrpack/minescript/log.json", "w") as f:
+            json.dump(tradable_items, f, indent=2)
+
+
+    for element in tradable_items:
+        try:
+            if not element["crafting"]:
+                continue
+            cost_craft = gettotalcraftmoney(element["crafting"])
+            if isinstance(cost_craft, (int, float)) and cost_craft > 0 and isinstance(element["auction_price_per_stack"], (int, float)):
+                element["crafting multiplier"] = element["auction_price_per_stack"] / cost_craft
+            else:
+                element["crafting multiplier"] = "Items to craft not found or cant craft item"
+        except Exception as e:
+            with open("C:/Users/nicks/AppData/Roaming/ModrinthApp/profiles/Nick 1.0.0.mrpack/minescript/errorlog.json", "w") as f:
+                f.write(f"Fehler: {repr(e)} bei Element: {repr(element)}\n")
+
+            
+                
 
 
     tradable_items.sort(key=lambda item: item["profit_per_stack"] or 0, reverse=True)
     for item in tradable_items:
-        if money > item["highest_order_per_stack"] *64*26:
+        if isinstance(item["highest_order_per_stack"], (int, float)) and money > item["highest_order_per_stack"] *64*26:
             item["buy_all"]= True
             break
     with open("C:/Users/nicks/AppData/Roaming/ModrinthApp/profiles/Nick 1.0.0.mrpack/minescript/log.json", "w") as f:
